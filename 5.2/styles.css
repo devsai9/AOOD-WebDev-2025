@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+#container {
+    --width: min(100vw, 100vh);
+    width: var(--width);
+    height: var(--width);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object {
+    --square-sidel: 100px;
+    width: var(--square-sidel);
+    height: var(--square-sidel);
+    border-radius: 20px;
+    
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+}
+
+#fourCorners {
+    background-color: #0000ffee;
+    animation: corners 4s linear infinite;
+}
+
+@keyframes corners {
+    25% {
+        left: calc(var(--width) - var(--square-sidel));
+        top: 0;
+    }
+    
+    50% {
+        left: calc(var(--width) - var(--square-sidel));
+        top: calc(var(--width) - var(--square-sidel));
+    }
+    
+    75% {
+        left: 0;
+        top: calc(var(--width) - var(--square-sidel));
+    }
+    
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+#diagonals {
+    background-color: #ff0000ee;
+    animation: diagonals 2s ease-in-out infinite;
+    z-index: 999;
+}
+
+@keyframes diagonals {
+    25% {
+        left: calc(var(--width) - var(--square-sidel));
+        top: 0;
+        scale: 1;
+    }
+    
+    37.5% {
+        scale: 1.5;
+    }
+    
+    50% {
+        left: 0;
+        top: calc(var(--width) - var(--square-sidel));
+        scale: 1;
+    }
+    
+    75% {
+        left: calc(var(--width) - var(--square-sidel));
+        top: calc(var(--width) - var(--square-sidel));
+        scale: 1;
+    }
+    
+    87.5% {
+        scale: 1.5;
+    }
+    
+    100% {
+        left: 0;
+        top: 0;
+        scale: 1;
+    }
+}
+
+#center {
+    background-color: #00ff00ee;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    transform: translate(-50%, -50%);
+    animation: colorRotate 2.2s ease-out infinite, rotate 2.2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes colorRotate {
+    from  { background-color: hsl(0, 100%, 50%);   }
+    12.5% { background-color: hsl(45, 100%, 50%);  }
+    25%   { background-color: hsl(90, 100%, 50%);  }
+    37.5% { background-color: hsl(135, 100%, 50%); }
+    50%   { background-color: hsl(180, 100%, 50%); }
+    62.5% { background-color: hsl(225, 100%, 50%); }
+    75%   { background-color: hsl(270, 100%, 50%); }
+    87.5% { background-color: hsl(315, 100%, 50%); }
+    to    { background-color: hsl(360, 100%, 50%); }
+}
