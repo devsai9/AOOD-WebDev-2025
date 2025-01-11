@@ -377,16 +377,16 @@
     <script defer>
         const toggle = document.querySelector('#loadInNewTab');
 
-        if (sessionStorage.getItem('loadInNewTab') === 'true') toggle.checked = true;
-        if (sessionStorage.getItem('loadInNewTab') == null) sessionStorage.setItem('loadInNewTab', 'false');
+        if (localStorage.getItem('loadInNewTab') === 'true') toggle.checked = true;
+        if (localStorage.getItem('loadInNewTab') == null) localStorage.setItem('loadInNewTab', 'false');
 
         toggle.addEventListener('change', () => {
-            if (toggle.checked) sessionStorage.setItem('loadInNewTab', 'true');
-            else sessionStorage.setItem('loadInNewTab', 'false');
+            if (toggle.checked) localStorage.setItem('loadInNewTab', 'true');
+            else localStorage.setItem('loadInNewTab', 'false');
         });
 
         function getLoadInNewTab() {
-            return sessionStorage.getItem('loadInNewTab') === 'true';
+            return localStorage.getItem('loadInNewTab') === 'true';
         }
     </script>
     <script defer>
