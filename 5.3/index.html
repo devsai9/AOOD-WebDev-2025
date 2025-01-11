@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+    <title>Sai's Supposed Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <style>
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sections {
+            display: flex;
+            transition: transform 0.65s ease-in-out;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            #sections {
+                transition: none;
+            }
+        }
+
+        .section {
+            width: 100vw;
+            max-width: 100vw;
+            overflow-x: hidden;
+            flex-shrink: 0;
+            padding-inline: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:navigateTo('home')">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="javascript:navigateTo('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:navigateTo('swing-of-tokyo')">Swing of Tokyo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:navigateTo('graphing-calculator')">Graphing Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:navigateTo('chez')">Chez</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-end me-3">
+            <div class="form-check form-switch form-check-reverse">
+                <label class="form-check-label" for="loadInNewTab" role="button">Load nav links in new tabs?</label>
+                <input class="form-check-input" type="checkbox" id="loadInNewTab" role="button">
+            </div>
+        </div>
+    </nav>
+    <div class="sections-wrapper" id="sections">
+        <section id="home" class="section">
+            <h1 class="display-6 fw-bold">Sai Chandra's Portfolio</h1>
+            <p class="display-6">Hello 👋</p>
+            <p>My name is Sai and I am a high school junior. <br> This is a portfolio project for my high school's
+                Advanced
+                Object-Oriented Design (AOOD) class and is intended to help us test drive Bootstrap.</p>
+            <hr>
+            <h3 class="mb-3">My AOOD Projects:</h3>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-header">AOOD Project #1</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Swing of Tokyo</h5>
+                            <p class="card-text">
+                                A UI for the King of Tokyo game.
+                            </p>
+                            <a href="javascript:navigateTo('swing-of-tokyo')" class="btn btn-primary">Visit project
+                                page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg my-5 my-lg-0">
+                    <div class="card">
+                        <div class="card-header">AOOD Project #2</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Graphing Calculator</h5>
+                            <p class="card-text">
+                                A UI for the King of Tokyo game.
+                            </p>
+                            <a href="javascript:navigateTo('graphing-calculator')" class="btn btn-primary">Visit project
+                                page</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <div class="card-header">AOOD Project #3</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chez Game</h5>
+                            <p class="card-text">
+                                A mini, chess-inspired game.
+                            </p>
+                            <a href="javascript:navigateTo('chez')" class="btn btn-primary">Visit project page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="swing-of-tokyo" class="section">
+            <h1 class="display-6 fw-bold">Sai Chandra's Portfolio</h1>
+            <h2 class="display-8 fw-normal">Swing of Tokyo</h2>
+            <p>In the 2024-25 Advanced Object-Oriented Design (AOOD), we coded a semi-popular game known as King of
+                Tokyo in Java.</p>
+            <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-2" onclick="window.open('https://github.com/devsai9/AOOD-Swing-Of-Tokyo-2024', '_blank')">View GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </button>
+            <hr>
+            <h3 class="mb-3">FAQ</h3>
+            <div class="accordion row" id="sot-faq">
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sot-collapseOne" aria-expanded="false" aria-controls="sot-collapseOne">
+                                What was stage I?
+                            </button>
+                        </h2>
+                        <div id="sot-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">In stage one in our design process for this game, we paired up
+                                into groups of three and worked together on understanding the rules and <strong>creating
+                                    our own game engine</strong> while also setting common standards with the rest of
+                                the class.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sot-collapseTwo" aria-expanded="false" aria-controls="sot-collapseTwo">
+                                What was stage II?
+                            </button>
+                        </h2>
+                        <div id="sot-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">During stage two, we worked individually to <strong>design and
+                                    prototype</strong>, but not code, <strong>a potential User Interface</strong> for
+                                our game engine. There were certain in-depth requirements we had to meet, such as taking
+                                in user input on certain game controls.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item col-md">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#sot-collapseThree" aria-expanded="false"
+                                aria-controls="sot-collapseThree">
+                                What was stage III?
+                            </button>
+                        </h2>
+                        <div id="sot-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">Finally, in stage three, we split off from our original groups
+                                of three into pairs to allow for ease of collaboration. During this stage, we selected
+                                the better design and <strong>built it in Java Swing</strong>. We then
+                                integrated/connected our backend (custom game engine) to our frontend (Swing UI).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="graphing-calculator" class="section mb-4">
+            <h1 class="display-6 fw-bold">Sai Chandra's Portfolio</h1>
+            <h2 class="display-8 fw-normal">Graphing Calculator</h2>
+            <p>In the 2024-25 Advanced Object-Oriented Design (AOOD), we excitedly learned abstract classes through a
+                series
+                of assignments where we made <code>Grapher</code> classes. We later had the optional extension to build
+                a
+                Swing-based UI.</p>
+            <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-2" onclick="window.open('https://github.com/devsai9/AOOD-GraphingCalculator-2024', '_blank')">View GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </button>
+            <hr>
+            <div class="d-flex align-items-center flex-column">
+                <h3 class="mb-3">Screenshots</h3>
+                <div id="gc-carousel" class="carousel slide mb-3" style="width: 65%;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/5.3/gc-1.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-2.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-3.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-4.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gc-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gc-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <h3 class="mb-3">FAQ</h3>
+            <div class="accordion row" id="gc-faq">
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#gc-collapseOne" aria-expanded="false" aria-controls="gc-collapseOne">
+                                What were the Grapher assignments?
+                            </button>
+                        </h2>
+                        <div id="gc-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">We began <strong>exploring abstract classes by diving
+                                    in</strong> head-first and
+                                writing some ourselves. The <code>Grapher</code> assignments were intended to teach us
+                                the
+                                basics of Java's Abstract Classes. We made classes for different types of graphers, such
+                                as
+                                <code>XYGrapher</code>, <code>FunctionGrapher</code>, <code>PolynomialGrapher</code>,
+                                and
+                                others!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#gc-collapseTwo" aria-expanded="false" aria-controls="gc-collapseTwo">
+                                Project Log??
+                            </button>
+                        </h2>
+                        <div id="gc-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body"><strong>Yes, we in fact had a log during the entirety of our
+                                    two-ish weeks on this project.</strong> During the last five minutes of class, we
+                                would note down in detail the things we accomplished, needed to do, and had
+                                questions/complaints about. The log was an excellent move by our teacher to keep us
+                                moving and stay focused during class time.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item col-md">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#gc-collapseThree" aria-expanded="false"
+                                aria-controls="gc-collapseThree">
+                                Optional UI?
+                            </button>
+                        </h2>
+                        <div id="gc-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">Due to time constraints, <strong>the final two assignments for
+                                    this project</strong>—which involved prototyping a UI digitally or on paper and then
+                                coding and integrating that UI with the existing <code>Grapher</code>
+                                assignments—<strong>were made optional</strong>. I chose to complete these assignments
+                                due to extra time I had in class, from which screenshots are available above in a
+                                carousel.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="chez" class="section">
+            <h1 class="display-6 fw-bold">Sai Chandra's Portfolio</h1>
+            <h2 class="display-8 fw-normal">Chez Game</h2>
+            <p>In the 2024-25 Advanced Object-Oriented Design (AOOD), we made games (usually modeled off of chess in
+                some way) to help us learn interfaces. All piece abilities (movement, jumping, hopping, etc.) needed to
+                be abstracted into interfaces.</p>
+            <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-2" onclick="window.open('https://github.com/devsai9/AOOD-Chez-2024', '_blank')">View GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </button>
+            <hr>
+            <h3 class="mb-3">FAQ</h3>
+            <div class="accordion row" id="chez-faq">
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chez-collapseOne" aria-expanded="false"
+                                aria-controls="chez-collapseOne">
+                                What was stage I?
+                            </button>
+                        </h2>
+                        <div id="chez-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">In stage one in our design process for this game, we paired up
+                                into groups of two (my group was special and was a group of three) and worked together
+                                on creating the rules of our game. Being a group of three, our teacher added the extra
+                                challenge of having to code our app into Java Swing, whose UI we planned in this stage.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chez-collapseTwo" aria-expanded="false"
+                                aria-controls="chez-collapseTwo">
+                                What was stage II?
+                            </button>
+                        </h2>
+                        <div id="chez-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">During stage two, we implemented our game mechanics and tested
+                                it via the console. Being a group of three with the teacher's challenge, we also
+                                finished off the Java Swing aspect in this stage as well.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 my-lg-0 col-lg">
+                    <div class="accordion-item col-md">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chez-collapseThree" aria-expanded="false"
+                                aria-controls="chez-collapseThree">
+                                "Chez"? Why??
+                            </button>
+                        </h2>
+                        <div id="chez-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">Our game's ingenuitive and groundbreaking name is <s>simply a
+                                    slight modification from "Chess"</s> a very unique, well-thought-out name that we
+                                carefully handpicked and selected to be our game's name.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script defer>
+        const toggle = document.querySelector('#loadInNewTab');
+
+        if (sessionStorage.getItem('loadInNewTab') === 'true') toggle.checked = true;
+        if (sessionStorage.getItem('loadInNewTab') == null) sessionStorage.setItem('loadInNewTab', 'false');
+
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) sessionStorage.setItem('loadInNewTab', 'true');
+            else sessionStorage.setItem('loadInNewTab', 'false');
+        });
+
+        function getLoadInNewTab() {
+            return sessionStorage.getItem('loadInNewTab') === 'true';
+        }
+    </script>
+    <script defer>
+        const sectionsWrapper = document.getElementById('sections');
+        const sectionIds = ['home', 'swing-of-tokyo', 'graphing-calculator', 'chez'];
+        const sectionUrls = ['index.html', 'swing.html', 'gc.html', 'chez.html'];
+
+        function navigateTo(sectionId) {
+            const index = sectionIds.indexOf(sectionId);
+
+            if (getLoadInNewTab()) {
+                window.open(sectionUrls[index], '_self');
+                return;
+            }
+
+            const offset = -index * 100;
+            sectionsWrapper.style.transform = `translateX(${offset}vw)`;
+
+            document.querySelector('#navbarNav').querySelector('.active').removeAttribute('aria-current');
+            document.querySelector('#navbarNav').querySelector('.active').classList.remove('active');
+
+            document.querySelector('#navbarNav').children[0].children[index].children[0].classList.add('active');
+            document.querySelector('#navbarNav').querySelector('.active').setAttribute('aria-current', 'page');
+
+            if (index != 2) document.body.style.overflowY = 'hidden';
+            else document.body.style.overflowY = 'auto';
+        }
+    </script>
+    <script defer>
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const prefersLightScheme = window.matchMedia('(prefers-color-scheme: light)');
+
+        function updateColorScheme() {
+            if (prefersDarkScheme.matches) document.body.setAttribute('data-bs-theme', 'dark');
+            else if (prefersLightScheme.matches) document.body.setAttribute('data-bs-theme', 'light');
+        }
+
+        updateColorScheme();
+
+        prefersDarkScheme.addEventListener('change', updateColorScheme);
+        prefersLightScheme.addEventListener('change', updateColorScheme);
+    </script>
+</body>
+
+</html>
