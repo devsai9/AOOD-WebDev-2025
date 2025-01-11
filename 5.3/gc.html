@@ -13,8 +13,12 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
@@ -28,12 +32,37 @@
                         <a class="nav-link" href="./chez.html">Chez</a>
                     </li>
                 </ul>
+                <div class="form-check form-switch form-check-reverse">
+                    <label class="form-check-label" for="loadInNewTab">Load nav links as new pages?</label>
+                    <input class="form-check-input" type="checkbox" id="loadInNewTab" disabled checked>
+                </div>
             </div>
-        </div>
-        <div class="w-100 d-flex justify-content-end me-3">
-            <div class="form-check form-switch form-check-reverse">
-                <label class="form-check-label" for="loadInNewTab">Load nav links as new pages?</label>
-                <input class="form-check-input" type="checkbox" id="loadInNewTab" disabled checked>
+            <div class="offcanvas offcanvas-end d-lg-none" id="offcanvasNavbar" tabindex="-1">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./swing.html">Swing of Tokyo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Graphing Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./chez.html">Chez</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="form-check form-switch form-check-reverse mt-3 d-flex justify-content-start gap-3">
+                        <label class="form-check-label" for="loadInNewTabOffcanvas">Load nav links as new pages?</label>
+                        <input class="form-check-input" type="checkbox" id="loadInNewTabOffcanvas" disabled checked>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,46 +78,48 @@
                     <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
                 </svg>
         </button>
-        <hr>
-        <div class="d-flex align-items-center flex-column">
-            <h3 class="mb-3">Screenshots</h3>
-            <div id="gc-carousel" class="carousel slide mb-3" style="width: 50%;">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+        <div class="d-none d-md-block">
+            <hr>
+            <div class="d-flex align-items-center flex-column">
+                <h3 class="mb-3">Screenshots</h3>
+                <div id="gc-carousel" class="carousel slide w-65 mb-3">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#gc-carousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/5.3/gc-1.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-2.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-3.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/5.3/gc-4.png" class="d-block w-100"
+                                alt="Screenshot from the Graphing Calculator app">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gc-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gc-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/5.3/gc-1.png" class="d-block w-100"
-                            alt="Screenshot from the Graphing Calculator app">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/5.3/gc-2.png" class="d-block w-100"
-                            alt="Screenshot from the Graphing Calculator app">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/5.3/gc-3.png" class="d-block w-100"
-                            alt="Screenshot from the Graphing Calculator app">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/5.3/gc-4.png" class="d-block w-100"
-                            alt="Screenshot from the Graphing Calculator app">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#gc-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#gc-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
         <hr>
@@ -134,7 +165,7 @@
                         </button>
                     </h2>
                     <div id="gc-collapseThree" class="accordion-collapse collapse">
-                        <div class="accordion-body">Due to time constraints, <strong>the final two assignments for this project</strong>—which involved prototyping a UI digitally or on paper and then coding and integrating that UI with the existing <code>Grapher</code> assignments—<strong>were made optional</strong>. I chose to complete these assignments due to extra time I had in class, from which screenshots are available above in a carousel.</div>
+                        <div class="accordion-body">Due to time constraints, <strong>the final two assignments for this project</strong>—which involved prototyping a UI digitally or on paper and then coding and integrating that UI with the existing <code>Grapher</code> assignments—<strong>were made optional</strong>. I chose to complete these assignments due to extra time I had in class.</div>
                     </div>
                 </div>
             </div>
