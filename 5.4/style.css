@@ -1,0 +1,82 @@
+body {
+    overflow-y: auto;
+    background-color: black;
+    color: white;
+}
+
+* {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#dynamicText {
+    font-size: 20px;
+    margin-top: 0;
+    transition: 0.3s;
+}
+
+#randomImage {
+    max-width: 800px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#resizeBox {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+}
+
+#header > .sub {
+    margin-top: -10px;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid hsl(234, 75%, 72%);
+}
+
+button, select {
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px !important;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: hsl(235, 86%, 65%);
+    padding: 20px;
+    margin-top: 10px;
+    transition: opacity 0.25s ease-in-out;
+    gap: 10px;
+    z-index: 999;
+    position: absolute;
+}
+
+#menu * {
+    color: white !important;
+}
+
+#menu.hidden {
+    pointer-events: none;
+    cursor: default;
+}
