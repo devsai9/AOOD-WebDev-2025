@@ -11,8 +11,8 @@ let timeVar = null;
 const MAX_TIME = 10;
 const SCOREBOARD_SIZE = 10;
 
-// const playerName = prompt("Enter your username: ") || "Anonymous";
-const playerName = "test";
+const playerName = prompt("Enter your username: ") || "Anonymous";
+// const playerName = "test";
 
 document.querySelector('#task').innerHTML = `Hello, ${playerName} 👋<br>See how many times you can click the rectangle below in ${MAX_TIME} seconds:`;
 
