@@ -12,3 +12,5 @@ This repository has five assignments/projects I did in my AOOD class during our 
 - CSS
 - JavaScript
 - Bootstrap
+- CodeHS
+- Visual Studio Code
