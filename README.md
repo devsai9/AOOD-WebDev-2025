@@ -1,6 +1,6 @@
-This project was made for our Advanced Object-Oriented Design (AOOD) class. <br>
+This project was made for my Advanced Object-Oriented Design (AOOD) class. <br>
 # Website Development Assignments (AOOD-WebDev-2025)
-This repository has four assignments/projects I did in my AOOD class at the start of our Web Development unit.
+This repository has five assignments/projects I did in my AOOD class during our Web Development unit.
 
 ## What I learned/refined
 1. Coding in HTML, CSS, and JavsScript
@@ -8,9 +8,7 @@ This repository has four assignments/projects I did in my AOOD class at the star
 3. Coding with Bootstrap
 
 ## Technologies used
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>Bootstrap</li>
-</ul>
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
